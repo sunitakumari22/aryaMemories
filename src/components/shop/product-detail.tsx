@@ -72,7 +72,12 @@ function ProductView({ product }: { product: Product }) {
         <div>
           <div className="relative aspect-square bg-memoir-50 rounded-lg mb-4">
             <div className="absolute inset-0 flex items-center justify-center text-memoir-400 font-serif italic text-xl">
-              {product.name} - Image {currentImageIndex + 1}
+              {/* {product.name} - Image {currentImageIndex + 1} */}
+              <img 
+      src={product.images[currentImageIndex]} 
+      alt={`Product ${currentImageIndex + 1}`} 
+      className="w-full h-full object-cover rounded-lg"
+    />
             </div>
             
             <button 

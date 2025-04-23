@@ -42,16 +42,21 @@ function ProductCard({ product }: { product: any }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-memoir-100 transition duration-300 group-hover:shadow-md">
-        <div className="relative aspect-[4/5] bg-memoir-50">
-          <div className="absolute inset-0 flex items-center justify-center text-memoir-400 font-serif italic">
-            Product Image
-          </div>
-          {product.stockLevel <= 5 && (
-            <div className="absolute top-4 right-4 bg-memoir-800 text-white text-xs px-2 py-1 rounded">
-              Low Stock
-            </div>
-          )}
-        </div>
+      <div className="relative aspect-[4/5] bg-memoir-50 overflow-hidden rounded">
+  <div className="absolute inset-0">
+    <img
+      src={product.images}
+      alt="Memory Book"
+      className="w-full h-full object-cover"
+    />
+  </div>
+  {product.stockLevel <= 5 && (
+    <div className="absolute top-4 right-4 bg-memoir-800 text-white text-xs px-2 py-1 rounded">
+      Low Stock
+    </div>
+  )}
+</div>
+
         
         <div className="p-4">
           <div className="flex justify-between items-start">

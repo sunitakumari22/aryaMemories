@@ -27,7 +27,11 @@ export function Hero() {
         </div>
         <div className="lg:w-1/2 relative min-h-[300px] md:min-h-[400px] w-full rounded-lg overflow-hidden shadow-2xl bg-white">
           <div className="absolute inset-0 bg-memoir-200 flex items-center justify-center font-serif italic text-memoir-500 text-xl">
-            Beautiful Memory Book Image
+          <img
+      src="images/1.jpg"
+      alt="Memory Book"
+      className="w-full h-full object-cover"
+    />
           </div>
         </div>
       </div>

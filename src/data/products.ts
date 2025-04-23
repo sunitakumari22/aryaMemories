@@ -8,9 +8,8 @@ export const products: Product[] = [
     description: "Cherish your special day forever with our handcrafted wedding memories book. Each page is designed to highlight your most precious moments.",
     price: 79.99,
     images: [
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg"
+      "images/wedding.jpg",
+      
     ],
     category: "Wedding",
     tags: ["wedding", "anniversary", "keepsake"],
@@ -43,9 +42,7 @@ export const products: Product[] = [
     description: "Document every precious milestone of your baby's first year with our beautifully designed memory book. Perfect for preserving those fleeting moments.",
     price: 64.99,
     images: [
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg"
+    "images/baby.jpg",
     ],
     category: "Baby",
     tags: ["baby", "milestone", "first year"],
@@ -113,9 +110,7 @@ export const products: Product[] = [
     description: "Capture your wanderlust experiences in our premium travel journal. With space for photos, mementos, and reflections, it's the perfect companion for any journey.",
     price: 39.99,
     images: [
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg"
+      "images/3.jpg",
     ],
     category: "Travel",
     tags: ["travel", "adventure", "journal", "memories"],
